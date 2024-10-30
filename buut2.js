@@ -7,7 +7,7 @@ $('.button').click(function() {
   let userIP = getUserIP();
 
   // Send a POST request to the backend to record the click
-  fetch('/api/record-click', {
+  fetch('/supa.js', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
