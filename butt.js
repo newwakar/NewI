@@ -1,4 +1,8 @@
 $('.button').click(function() {
+      // Increment the click count in the label
+    $('.label').html(function(i, val) {
+        return val*1+1;
+    });
   // Get the user's IP address (replace with your actual IP fetching function)
   let userIP = getUserIP();
 
