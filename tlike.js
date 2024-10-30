@@ -10,7 +10,7 @@ toggleLike() {
   };
 
   // Send like/unlike data with POST request using Fetch API
-  fetch('/your-endpoint', {
+  fetch('https://webhook-test.com/cd3b226988135b61c53c63814803941b', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
