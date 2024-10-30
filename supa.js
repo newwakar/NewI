@@ -1,14 +1,9 @@
-const express = require('express');
-const { createClient } = require('@supabase/supabase-js');
 
-const app = express();
-const port = 3000;
+import { createClient } from '@supabase/supabase-js'
 
-// Replace with your Supabase credentials
-const supabaseUrl = 'https://your-supabase-url';
-const supabaseAnonKey = 'your-supabase-anon-key';
-
-const supabase = createClient(supabaseUrl, supabaseAnonKey);
+const supabaseUrl = 'https://lnboqislxbvionxukizw.supabase.co'
+const supabaseKey = process.env.SUPABASE_KEY
+const supabase = createClient(supabaseUrl, supabaseKey);
 
 app.post('/api/record-click', async (req, res) => {
   const { ip_address } = req.body;
