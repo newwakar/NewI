@@ -28,3 +28,4 @@ $('.button').click(function() {
     console.error('Error sending click data:', error);
   });
 });
+ 
